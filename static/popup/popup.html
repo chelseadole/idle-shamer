@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Idle Shamer</title>
+    <script src="/popup.js"></script>
+    <link rel="stylesheet" href="/resources/materialize/materialize.min.css">
+	<link rel="stylesheet" href="/resources/font/material-icons.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <link id="compactStylesheet" rel="stylesheet" href="/static/compact-style.css">
+  </head>
+  <body>
+
+    <div class="allExtensionsContainer">
+        <!-- Selected sites to shame -->
+        <div class="card">
+          <div class="card-content extension-card-content activeTitleDiv">
+            <span id="activeTitle" class="card-title">Active</span>
+            <span id="activeCount" class=""></span>
+            </div>
+            <div id="activeExtensions"></div>
+        </div>
+        <!-- Selected sites to shame -->
+        <div class="card">
+          <div class="card-content extension-card-content inactiveTitleDiv">
+            <span id="inactiveTitle" class="card-title">Inactive</span>
+            <span id="inactiveCount" class=""></span>
+            </div>
+            <div id="inactiveExtensions"></div>
+        </div>
+    </div> <!-- allExtensionsContainer -->
+
+  </body>
+<!--<script src="options.js"></script>-->
+<script src="/resources/jquery-2.1.1.min.js"></script>
+<script src="/resources/materialize/materialize.min.js"></script>
+</html> 

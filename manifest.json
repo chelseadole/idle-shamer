@@ -1,0 +1,23 @@
+{
+	"name": "Idle Shamer",
+    "version": "1.0",
+    "description": "A Chrome extension which sends increasingly rude alerts when you spend too long on unproductive sites",
+	"manifest_version": 2,
+	"content_scripts":[
+	    {
+	    	"matches": ["<all_urls>"],
+	    	"js": ["app.js"]
+	    }
+	],
+	"options_page": "static/options/options.html",
+	"browser_action": {
+		"default_title": "Idle Shamer",
+    	"default_icon": "static/hello_extensions.png",
+    	"default_popup": "static/popup/popup.html"
+  	},
+	"background": {
+    	"scripts": ["background.js"],
+    	"persistent": true
+    },
+	"permissions": ["tabs"]
+}
